@@ -1,0 +1,29 @@
+﻿<Window x:Class="bd3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bd3"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid>
+        <DataGrid x:Name="EmployeesMainGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Айди Работника" Binding="{Binding EmployeeID}" />
+                <DataGridTextColumn Header="Имя Работника" Binding="{Binding FirstName}" />
+                <DataGridTextColumn Header="Фамилия Работника" Binding="{Binding LastName}" />
+                <DataGridTextColumn Header="Позиция" Binding="{Binding Position}" />
+                <DataGridTextColumn Header="Департамент" Binding="{Binding Department}" />
+                <DataGridTextColumn Header="Айди Проекта" Binding="{Binding ProjectID}" />
+                <DataGridTextColumn Header="Название проекта" Binding="{Binding ProjectName}" />
+                <DataGridTextColumn Header="Бюджет" Binding="{Binding Budget}" />
+                <DataGridTextColumn Header="Имя Клиента" Binding="{Binding ClientName}" />
+                <DataGridTextColumn Header="Айди Задачи" Binding="{Binding TaskID}" />
+                <DataGridTextColumn Header="Имя задачи" Binding="{Binding TaskName}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
